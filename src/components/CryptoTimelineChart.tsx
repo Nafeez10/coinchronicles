@@ -191,9 +191,9 @@ const CryptoTimelineChart = ({coinName, currentPrice, dailyChange}:propsType) =>
 
     return (
         <>
-            <Box sx={{width:"100%",mt:5, display:"flex", justifyContent:"center", borderColor:"formColor.main"}}>
+            <Box sx={{width:"100%",mt:5, display:"flex", justifyContent:"center"}}>
                     <FormControl color='info' sx={{
-                        width: {xs:"100%",md:"70%", lg:"50%" }, mb:4,bgcolor:"inputColor.main" , color:textColor, 
+                        width: {xs:"100%",md:"70%", lg:"50%" }, mb:4,bgcolor:"background.paper" , color:textColor, 
                     }} >
                         <InputLabel color='info' id="demo-simple-select-label">TimeLine</InputLabel>
                         <Select
@@ -202,7 +202,7 @@ const CryptoTimelineChart = ({coinName, currentPrice, dailyChange}:propsType) =>
                             value={chartYear}
                             label="Timeline"
                             onChange={handleChartYear}
-                            sx={{borderColor:"formColor.main", '& > *': {borderColor:"formColor.main", color:textColor }}}
+                            sx={{borderColor:"formColor.main",border:"2px"}}
                         >
                             {
                                 coinChartTimeLine.map( year =>(
