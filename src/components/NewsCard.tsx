@@ -37,7 +37,7 @@ const NewsCard = ({ title, thumbnailUrl, description, publisherImgUrl,PublisherN
                 component="img"
                 height="194"
                 image={thumbnailUrl}
-                alt="Paella dish"
+                alt="News Thumbnail"
             />
             <CardContent>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
