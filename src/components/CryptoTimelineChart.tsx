@@ -140,7 +140,7 @@ const CryptoTimelineChart = ({coinName, currentPrice, dailyChange}:propsType) =>
                                     stack: 'total',
                                     area: true,
                                     stackOrder: 'ascending',
-                                    data: coinPriceHistory,
+                                    data: coinPriceHistory.reverse(),
                                     
                                 }
                             ]}
